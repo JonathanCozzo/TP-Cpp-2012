@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Pierre.h
  * Author: jonathancozzo
  *
@@ -7,6 +7,7 @@
 
 #ifndef PIERRE_H
 #define	PIERRE_H
+#include "Coup.h"
 
 class Pierre {
 public:

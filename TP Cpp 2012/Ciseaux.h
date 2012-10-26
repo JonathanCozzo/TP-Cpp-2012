@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Ciseaux.h
  * Author: jonathancozzo
  *
@@ -7,6 +7,8 @@
 
 #ifndef CISEAUX_H
 #define	CISEAUX_H
+#include <string>
+#include "Coup.h"
 
 class Ciseaux : public Coup {
 private:
