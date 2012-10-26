@@ -1,13 +1,13 @@
-/* 
+/*
  * File:   Coup.cpp
  * Author: jonathancozzo
- * 
+ *
  * Created on 26 octobre 2012, 15:08
  */
 
 #include "Coup.h"
 
-std::string Coup::type() {
+std::string Coup::type() const {
     return "Coup";
 }
 
@@ -32,3 +32,10 @@ bool operator< (const Coup& c1, const Coup& c2) {
         if (c2.type()=="Ciseaux") return false ;
     }
 }
+
+void operator<<( ostream &flux, Coup const& cp )
+{
+    flux << cp.type()
+    return flux;
+}
+
