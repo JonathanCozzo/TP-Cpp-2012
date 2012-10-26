@@ -7,12 +7,7 @@
 
 #include "Pierre.h"
 
-Pierre::Pierre() {
-}
-
-Pierre::Pierre(const Pierre& orig) {
-}
-
-Pierre::~Pierre() {
+std::string Pierre::type() {
+    return "Pierre";
 }
 

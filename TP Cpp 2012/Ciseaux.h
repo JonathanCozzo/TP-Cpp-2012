@@ -7,7 +7,10 @@
 
 #ifndef CISEAUX_H
 #define	CISEAUX_H
+<<<<<<< HEAD
 #include <string>
+=======
+>>>>>>> Include partout
 #include "Coup.h"
 
 class Ciseaux : public Coup {

@@ -9,12 +9,8 @@
 #define	COUP_H
 
 class Coup {
-public:
-    Coup();
-    Coup(const Coup& orig);
-    virtual ~Coup();
 private:
-
+    std::string type();
 };
 
 #endif	/* COUP_H */
