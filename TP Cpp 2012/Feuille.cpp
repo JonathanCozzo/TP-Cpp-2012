@@ -7,12 +7,7 @@
 
 #include "Feuille.h"
 
-Feuille::Feuille() {
-}
-
-Feuille::Feuille(const Feuille& orig) {
-}
-
-Feuille::~Feuille() {
+std::string Feuille::type() {
+    return "Feuille";
 }
 

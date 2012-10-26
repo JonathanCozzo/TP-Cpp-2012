@@ -7,15 +7,12 @@
 
 #ifndef PIERRE_H
 #define	PIERRE_H
+#include <string>
 #include "Coup.h"
 
-class Pierre {
-public:
-    Pierre();
-    Pierre(const Pierre& orig);
-    virtual ~Pierre();
+class Pierre : public Coup {
 private:
-
+    std::string type();
 };
 
 #endif	/* PIERRE_H */

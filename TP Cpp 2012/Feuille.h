@@ -7,15 +7,14 @@
 
 #ifndef FEUILLE_H
 #define	FEUILLE_H
+#include <string>
+#include "Coup.h"
 
-class Feuille {
-public:
-    Feuille();
-    Feuille(const Feuille& orig);
-    virtual ~Feuille();
+class Feuille : public Coup {
 private:
-
+    std::string type();
 };
+
 
 #endif	/* FEUILLE_H */
 

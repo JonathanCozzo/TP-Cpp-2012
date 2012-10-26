@@ -6,13 +6,6 @@
  */
 
 #include "Coup.h"
-
-Coup::Coup() {
+std::string Coup::type() {
+    return "Coup";
 }
-
-Coup::Coup(const Coup& orig) {
-}
-
-Coup::~Coup() {
-}
-
