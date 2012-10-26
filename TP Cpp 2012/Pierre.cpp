@@ -7,7 +7,7 @@
 
 #include "Pierre.h"
 
-std::string Pierre::type() {
+std::string Pierre::type() const {
     return "Pierre";
 }
 
