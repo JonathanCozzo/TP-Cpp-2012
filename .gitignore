@@ -10,3 +10,5 @@
 *.lai
 *.la
 *.a
+/TP Cpp 2012/build/
+/TP Cpp 2012/dist/
