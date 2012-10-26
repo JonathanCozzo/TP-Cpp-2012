@@ -11,7 +11,10 @@
 
 class Coup {
 private:
-    std::string type();
+    std::string type() const;
+    friend bool operator==(const Coup&, const Coup&);
+    friend bool operator<(const Coup&&, const Coup&);
+    friend string operator<<(const Coup&, const Coup&);
 };
 
 #endif	/* COUP_H */
