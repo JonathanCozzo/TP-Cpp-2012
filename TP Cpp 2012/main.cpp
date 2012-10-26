@@ -6,6 +6,10 @@
  */
 
 #include <cstdlib>
+#include <string>
+#include "Coup.h"
+#include "Pierre.h"
+#include "Ciseaux.h"
 
 using namespace std;
 
@@ -13,7 +17,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
+    Pierre * p = new Pierre();
     return 0;
 }
 
