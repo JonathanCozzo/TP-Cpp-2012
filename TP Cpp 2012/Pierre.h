@@ -7,6 +7,7 @@
 
 #ifndef PIERRE_H
 #define	PIERRE_H
+#include <string>
 #include "Coup.h"
 
 class Pierre : public Coup {

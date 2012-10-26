@@ -7,6 +7,7 @@
 
 #ifndef COUP_H
 #define	COUP_H
+#include <string>
 
 class Coup {
 private:

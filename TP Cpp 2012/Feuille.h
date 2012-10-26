@@ -7,6 +7,7 @@
 
 #ifndef FEUILLE_H
 #define	FEUILLE_H
+#include <string>
 #include "Coup.h"
 
 class Feuille : public Coup {
