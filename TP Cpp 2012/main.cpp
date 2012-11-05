@@ -12,6 +12,7 @@
 #include "Ciseaux.h"
 #include "Feuille.h"
 #include "Joueur.h"
+#include "Partie.h"
 
 using namespace std;
 
@@ -20,7 +21,16 @@ using namespace std;
  */
 
 int main(int argc, char** argv) {
-    Pierre * p = new Pierre();
+    Joueur * joueur1 = new Joueur();
+    Joueur * joueur2 = new Joueur();
+    joueur1->score=0;
+    joueur2->score=0;
+    Partie * partie = new Partie();
+    while(joueur1->score<10 || joueur2->score<10){
+        partie->jouer_tour(*joueur1, *joueur2);
+        partie->afficher_score(*joueur1, *joueur2);
+    }
     return 0;
+
 }
 

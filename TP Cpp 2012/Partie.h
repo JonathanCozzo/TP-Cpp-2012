@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Partie.h
  * Author: jonathancozzo
  *
@@ -14,9 +14,8 @@ public:
     Partie();
     Partie(const Partie& orig);
     virtual ~Partie();
-private:
-    void jouer_tour(Joueur j1, Joueur j2);
-    void afficher_scores(Joueur j1, Joueur j2);
+    void jouer_tour(Joueur& j1, Joueur& j2);
+    void afficher_score(Joueur& j1, Joueur& j2);
 };
 
 #endif	/* PARTIE_H */
