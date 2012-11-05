@@ -10,7 +10,7 @@
 #include <string>
 #include "Coup.h"
 
-class Ciseaux : public Coup const {
+class Ciseaux : public Coup {
 private:
     std::string type();
 };

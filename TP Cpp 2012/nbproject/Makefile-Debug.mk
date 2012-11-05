@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Ciseaux.o \
 	${OBJECTDIR}/Pierre.o \
 	${OBJECTDIR}/Feuille.o \
+	${OBJECTDIR}/Joueur.o \
 	${OBJECTDIR}/Coup.o
 
 
@@ -85,6 +86,11 @@ ${OBJECTDIR}/Feuille.o: Feuille.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Feuille.o Feuille.cpp
+
+${OBJECTDIR}/Joueur.o: Joueur.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Joueur.o Joueur.cpp
 
 ${OBJECTDIR}/Coup.o: Coup.cpp 
 	${MKDIR} -p ${OBJECTDIR}
