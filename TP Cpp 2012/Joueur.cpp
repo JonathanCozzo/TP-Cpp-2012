@@ -18,6 +18,7 @@ Joueur::~Joueur() {
 }
 
 Coup* obtenir_coup() {
+    std::cout<< "Quel coup souhaitez-vous jouer ?" <<std::endl;
     std::string s;
     std::cin >> s;
     if (s=="Pierre") return new Pierre();
