@@ -9,13 +9,14 @@
 #define	COUP_H
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Coup {
 private:
     std::string type() const;
     friend bool operator==(const Coup&, const Coup&);
     friend bool operator<(const Coup&, const Coup&);
-    friend void operator<<(ostream &flux, Coup const& cp );
+    friend ostream& operator<<(ostream&, const Coup&);
 };
 
 #endif	/* COUP_H */

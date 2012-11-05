@@ -6,6 +6,7 @@
  */
 
 #include "Coup.h"
+#include <iostream>
 
 std::string Coup::type() const {
     return "Coup";
@@ -31,11 +32,13 @@ bool operator< (const Coup& c1, const Coup& c2) {
         if (c2.type()=="Feuille") return false ;
         if (c2.type()=="Ciseaux") return false ;
     }
+    return false;
 }
 
-void operator<<( ostream &flux, Coup const& cp )
-{
-    flux << cp.type()
-    return flux;
+ostream& operator<<(ostream& out, const Coup& c) {
+    if (c.type()=="Pierre") out << "Pierre";
+    if (c.type()=="Feuille") out << "Feuille";
+    if (c.type()=="Ciseaux") out << "Ciseaux";
+    return out;
 }
 
