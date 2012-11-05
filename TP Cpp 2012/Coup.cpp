@@ -8,7 +8,7 @@
 #include "Coup.h"
 #include <iostream>
 
-std::string Coup::type() const {
+string Coup::type() const {
     return "Coup";
 }
 
