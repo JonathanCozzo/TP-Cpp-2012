@@ -7,7 +7,7 @@
 
 #include "Feuille.h"
 
-std::string Feuille::type() {
+std::string Feuille::type() const {
     return "Feuille";
 }
 
