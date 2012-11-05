@@ -1,7 +1,7 @@
-/* 
+/*
  * File:   Joueur.cpp
  * Author: jonathancozzo
- * 
+ *
  * Created on 5 novembre 2012, 14:17
  */
 
@@ -17,7 +17,7 @@ Joueur::Joueur(const Joueur& orig) {
 Joueur::~Joueur() {
 }
 
-Coup* obtenir_coup() {
+Coup* Joueur::obtenir_coup() {
     std::cout<< "Quel coup souhaitez-vous jouer ?" <<std::endl;
     std::string s;
     std::cin >> s;

@@ -1,11 +1,12 @@
-/* 
+/*
  * File:   Partie.cpp
  * Author: jonathancozzo
- * 
+ *
  * Created on 5 novembre 2012, 15:22
  */
 
 #include "Partie.h"
+#include "Joueur.h"
 
 Partie::Partie() {
 }
