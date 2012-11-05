@@ -18,8 +18,9 @@ public:
     Joueur();
     Joueur(const Joueur& orig);
     virtual ~Joueur();
-private:
     Coup* obtenir_coup();
+private:
+    
 };
 
 #endif	/* JOUEUR_H */
