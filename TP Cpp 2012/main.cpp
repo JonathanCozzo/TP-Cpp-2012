@@ -10,6 +10,8 @@
 #include "Coup.h"
 #include "Pierre.h"
 #include "Ciseaux.h"
+#include "Feuille.h"
+#include "Joueur.h"
 
 using namespace std;
 
