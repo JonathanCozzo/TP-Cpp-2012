@@ -15,7 +15,7 @@ class Joueur;
 
 class Coup {
 private:
-    std::string type() const;
+    string type() const;
     friend bool operator==(const Coup&, const Coup&);
     friend bool operator<(const Coup&, const Coup&);
     friend ostream& operator<<(ostream&, const Coup&);
